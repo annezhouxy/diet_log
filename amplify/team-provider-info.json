@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-dietlog-dev-192653-authRole",
+      "UnauthRoleArn": "arn:aws:iam::030940243212:role/amplify-dietlog-dev-192653-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::030940243212:role/amplify-dietlog-dev-192653-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-dietlog-dev-192653-deployment",
+      "UnauthRoleName": "amplify-dietlog-dev-192653-unauthRole",
+      "StackName": "amplify-dietlog-dev-192653",
+      "StackId": "arn:aws:cloudformation:us-east-2:030940243212:stack/amplify-dietlog-dev-192653/53a61ff0-57fa-11ed-9c99-06028728ad1e",
+      "AmplifyAppId": "d3kvkxhbh7uhsq"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d3kvkxhbh7uhsq",
+          "type": "manual"
+        }
+      }
+    }
+  }
+}
