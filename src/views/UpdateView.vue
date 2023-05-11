@@ -1,7 +1,8 @@
 <template>
   <div>
-    <h1>This is Update view</h1>
-    <div>
+ <h1>You can update if there is any change to your item!</h1>
+   <div class = "log">
+       
       <form novalidate class="md-layout" @submit.prevent="validateDietLog">
         <md-card class="md-layout-item md-size-50 md-small-size-100">
           <md-card-header>
@@ -145,6 +146,21 @@
     </div>
   </div>
 </template>
+
+
+<style scoped>
+h1{
+  padding-top: 1.1%;
+  font-size: 20px;
+  line-height: 40px;
+  font-family: 'Product Sans';
+
+}
+.log{
+    padding-top: 1.3%;
+   
+}
+</style>
 
 <script>
 import { validationMixin } from "vuelidate";

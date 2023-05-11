@@ -1,4 +1,4 @@
-# diet_log
+# Anne'e Diet Log Project
 
 ## Project setup
 ```

@@ -1,27 +1,10 @@
 <template>
   <div class="about">
-    <p>Welcome to the Diet Log App. Let's get started!</p>
-    <!-- <div>
-      <table v-if="dietLogs.length"> 
-       <tr>   
-          <th>Date</th>
-          <th>Time</th>
-          <th>Category</th>
-          <th>Name</th>
-          <th>Weight</th>
-          <th>Calories</th>
-        </tr>
-        <DietLog  v-for = "log of dietLogs" v-bind:key = "log.key" v-bind:log = "log">{{log}}
-        </DietLog>
-
-     
-      </table>
-      <p v-else>Diet Log is empty.</p>
-    </div> -->
-    <div>
-      <md-table md-card>
+    <p class = "welcome">Welcome to the Diet Log App. Here is your log!</p>
+    <div class = "card">
+      <md-table md-card >
         <md-table-toolbar>
-          <h1 class="md-title">Users</h1>
+          <h1 class="md-title">User Name</h1>
         </md-table-toolbar>
 
         <md-table-row>
@@ -37,11 +20,23 @@
         </DietLog>
       </md-table>
     </div>
+    <br><br><br>
     <button @click="addPlaceHolderLog">click to add place holder log</button>
     <button @click="dietLogs.push({})">click to add an empty log</button>
   </div>
 </template>
 
+<style scoped>
+.welcome{
+  font-size: 27px;
+  padding-top: 1.1%;
+  font-family: 'Product Sans';
+}
+.card{
+    padding-top: 1.1%;
+}
+
+</style>
 <script>
 import DietLog from "@/components/DietLog.vue";
 export default {

@@ -1,23 +1,13 @@
 <template>
-  <!-- <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/add">Add</router-link> |
-      <router-link to="/delete">Delete</router-link> |
-      <router-link to="/update">Update</router-link>
-    </nav>
-    <router-view/>
-  </div> -->
   <div class="page-container">
-    <md-app>
+    <md-app >
       <md-app-toolbar class="md-primary">
-        <span class="md-title">Diet Log</span>
+        <span class="md-title">Anne Zhou's Diet Log</span>
       </md-app-toolbar>
 
-      <md-app-drawer md-permanent="full">
+      <md-app-drawer md-permanent="full" class = "left">
         <md-toolbar class="md-transparent" md-elevation="0">
-          Anne Zhou
+          Navigation
         </md-toolbar>
 
         <md-list>
@@ -65,4 +55,21 @@
     width: 230px;
     max-width: calc(100vw - 125px);
   }
+
+  .md-list-item-text{
+    font-size: 130%;
+    font-family: 'Product Sans';
+    
+  }
+   .md-transparent{
+        font-size: 170%;
+    font-family: 'Product Sans';
+   }
+.md-drawer.md-app-drawer.left.md-theme-default.md-left.md-permanent.md-permanent-full {
+    width: 250px;
+}
+.left{
+  padding-left:1.3%;
+   padding-top:0.1%;
+}
 </style>

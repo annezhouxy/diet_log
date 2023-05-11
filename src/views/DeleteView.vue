@@ -1,5 +1,8 @@
 <template>
-  <div>
+<div>
+ <h1>You can delete if you accidently inserted the wrong item!</h1>
+   <div class = "log">
+       
     <form novalidate class="md-layout" @submit.prevent="validateDeleteDietLog">
       <md-card class="md-layout-item md-size-50 md-small-size-100">
         <md-card-header>
@@ -28,7 +31,22 @@
       </md-card>
     </form>
   </div>
+  </div>
 </template>
+
+<style scoped>
+h1{
+  padding-top: 1.1%;
+  font-size: 20px;
+  line-height: 40px;
+  font-family: 'Product Sans';
+
+}
+.log{
+    padding-top: 1.3%;
+   
+}
+</style>
 
 <script>
 export default {
